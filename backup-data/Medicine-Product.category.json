@@ -1,0 +1,160 @@
+[{
+  "_id": "f8518cd0-1464-444a-b18f-371cffdb39ad",
+  "Name": "Thực phẩm chức năng",
+  "ParentId": null
+},
+{
+  "_id": "ea5fca7f-43ca-4d8e-a317-cbb524df6be1",
+  "Name": "Dược mỹ phẩm",
+  "ParentId": null
+},
+{
+  "_id": "28869363-72d9-4ad1-a627-4dbd1f9d49a0",
+  "Name": "Chăm sóc cá nhân",
+  "ParentId": null
+},
+{
+  "_id": "0a2afc9c-7297-4416-a782-936e8cb52bce",
+  "Name": "Thiết bị y tế",
+  "ParentId": null
+},
+{
+  "_id": "44a4467a-7fcb-4b8b-a9a7-5b31b1984c97",
+  "Name": "Vitamin & Khoáng chất",
+  "ParentId": "f8518cd0-1464-444a-b18f-371cffdb39ad"
+},
+{
+  "_id": "907370c7-6026-4f55-b328-a85bd8cca978",
+  "Name": "Sinh lý - Nội tiết tố",
+  "ParentId": "f8518cd0-1464-444a-b18f-371cffdb39ad"
+},
+{
+  "_id": "98f4485d-4f3a-4071-9ca4-3423c5e9c6f5",
+  "Name": "Cải thiện tăng cường chức năng",
+  "ParentId": "f8518cd0-1464-444a-b18f-371cffdb39ad"
+},
+{
+  "_id": "8650f26b-9841-4f1f-8612-d29fdfa797d5",
+  "Name": "Hỗ trợ điều trị",
+  "ParentId": "f8518cd0-1464-444a-b18f-371cffdb39ad"
+},
+{
+  "_id": "6bf140a1-588a-44ee-bec6-f4ef2ce029f0",
+  "Name": "Hỗ trợ tiêu hóa",
+  "ParentId": "f8518cd0-1464-444a-b18f-371cffdb39ad"
+},
+{
+  "_id": "d9bbda14-e5aa-4c98-a2a8-db2ee18748d2",
+  "Name": "Thần kinh não",
+  "ParentId": "f8518cd0-1464-444a-b18f-371cffdb39ad"
+},
+{
+  "_id": "d3a263f0-fd44-4a31-82fe-3cc0f7a9dcb7",
+  "Name": "Hỗ trợ làm đẹp",
+  "ParentId": "f8518cd0-1464-444a-b18f-371cffdb39ad"
+},
+{
+  "_id": "7603e095-4502-4b3a-a374-3d432755e44d",
+  "Name": "Sức khỏe tim mạch",
+  "ParentId": "f8518cd0-1464-444a-b18f-371cffdb39ad"
+},
+{
+  "_id": "493ec281-d831-4ab2-b7e1-09d72a4a524d",
+  "Name": "Dinh dưỡng",
+  "ParentId": "f8518cd0-1464-444a-b18f-371cffdb39ad"
+},
+{
+  "_id": "74cf405a-18bb-4274-b3a3-c1f948c9c2af",
+  "Name": "Chăm sóc da mặt",
+  "ParentId": "ea5fca7f-43ca-4d8e-a317-cbb524df6be1"
+},
+{
+  "_id": "f10e4a23-a5b5-4028-b6c2-2ba4e25d6345",
+  "Name": "Chăm sóc cơ thể",
+  "ParentId": "ea5fca7f-43ca-4d8e-a317-cbb524df6be1"
+},
+{
+  "_id": "56cc16c4-d772-430d-8800-2c2ae9a949dc",
+  "Name": "Giải pháp làn da",
+  "ParentId": "ea5fca7f-43ca-4d8e-a317-cbb524df6be1"
+},
+{
+  "_id": "08d6b693-90fa-4d32-a89e-ed9868e0892c",
+  "Name": "Chăm sóc tóc - da đầu",
+  "ParentId": "ea5fca7f-43ca-4d8e-a317-cbb524df6be1"
+},
+{
+  "_id": "f8825d50-6a2b-4086-a90c-2f2add5f5e8f",
+  "Name": "Mỹ phẩm trang điểm",
+  "ParentId": "ea5fca7f-43ca-4d8e-a317-cbb524df6be1"
+},
+{
+  "_id": "47a9c302-d964-4365-9025-c2c7e223d193",
+  "Name": "Chăm sóc da vùng mặt",
+  "ParentId": "ea5fca7f-43ca-4d8e-a317-cbb524df6be1"
+},
+{
+  "_id": "81e1928f-dbcf-4854-a84c-5c069a32f654",
+  "Name": "Sản phẩm từ thiên nhiên",
+  "ParentId": "ea5fca7f-43ca-4d8e-a317-cbb524df6be1"
+},
+{
+  "_id": "0055feb5-7ca6-4fe8-893f-03affe162039",
+  "Name": "Hỗ trợ tình dục",
+  "ParentId": "28869363-72d9-4ad1-a627-4dbd1f9d49a0"
+},
+{
+  "_id": "ec481393-3de4-470a-bced-d96bab619880",
+  "Name": "Thực phẩm - Đồ uống",
+  "ParentId": "28869363-72d9-4ad1-a627-4dbd1f9d49a0"
+},
+{
+  "_id": "bf4c71ba-317d-4dce-a86b-0481f48061ad",
+  "Name": "Vệ sinh cá nhân",
+  "ParentId": "28869363-72d9-4ad1-a627-4dbd1f9d49a0"
+},
+{
+  "_id": "4d15d60c-7f1f-4b38-ad64-051b8c96d7ba",
+  "Name": "Chăm sóc răng miệng",
+  "ParentId": "28869363-72d9-4ad1-a627-4dbd1f9d49a0"
+},
+{
+  "_id": "96fcda3c-03b4-4828-8e18-0f2f72fce6f8",
+  "Name": "Đồ dùng gia đình",
+  "ParentId": "28869363-72d9-4ad1-a627-4dbd1f9d49a0"
+},
+{
+  "_id": "36140e0a-23e7-4f29-bec5-ef8f082aabfd",
+  "Name": "Hàng tổng hợp",
+  "ParentId": "28869363-72d9-4ad1-a627-4dbd1f9d49a0"
+},
+{
+  "_id": "88959bf8-013d-4a38-9baa-30b530cca729",
+  "Name": "Tinh dầu các loại",
+  "ParentId": "28869363-72d9-4ad1-a627-4dbd1f9d49a0"
+},
+{
+  "_id": "bf7ab027-f915-49a1-9916-b86b85ab75ee",
+  "Name": "Thiết bị làm đẹp",
+  "ParentId": "28869363-72d9-4ad1-a627-4dbd1f9d49a0"
+},
+{
+  "_id": "f105a9cd-1517-4655-a480-0996015cfb5e",
+  "Name": "Dụng cụ y tế",
+  "ParentId": "0a2afc9c-7297-4416-a782-936e8cb52bce"
+},
+{
+  "_id": "abaa2e20-765a-4e7d-89af-bd0b5f1bce1f",
+  "Name": "Dụng cụ theo dõi",
+  "ParentId": "0a2afc9c-7297-4416-a782-936e8cb52bce"
+},
+{
+  "_id": "da88a34f-1fda-4df4-93c0-a47708abdb27",
+  "Name": "Dụng cụ sơ cứu",
+  "ParentId": "0a2afc9c-7297-4416-a782-936e8cb52bce"
+},
+{
+  "_id": "cd533501-e8b5-469f-8914-799179423f8b",
+  "Name": "Khẩu trang",
+  "ParentId": "0a2afc9c-7297-4416-a782-936e8cb52bce"
+}]
