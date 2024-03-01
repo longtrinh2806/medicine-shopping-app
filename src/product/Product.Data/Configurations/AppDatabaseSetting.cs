@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductData.DataAccess
+namespace Product.Data.Configurations
 {
     public class AppDatabaseSetting
     {

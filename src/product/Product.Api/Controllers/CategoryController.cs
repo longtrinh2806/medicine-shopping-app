@@ -34,11 +34,25 @@ namespace Product.Api.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> Get(Guid id)
+        public IActionResult Get(Guid id)
         {
             try
             {
-                var result = await _categoryService.GetById(id);
+                var result = _categoryService.GetById(id);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("parentid/{parentId}")]
+        public async Task<IActionResult> GetByParentId(Guid parentId)
+        {
+            try
+            {
+                var result = await _categoryService.GetByParentId(parentId);
                 return Ok(result);
             }
             catch (Exception ex)

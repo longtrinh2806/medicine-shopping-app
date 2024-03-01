@@ -13,3 +13,4 @@ D:\Learning IT\Learning ASP NET\medicine-shopping\medicine-shopping-app\src\prod
 D:\Learning IT\Learning ASP NET\medicine-shopping\medicine-shopping-app\src\product\Product.Services\obj\Debug\net8.0\refint\Product.Services.dll
 D:\Learning IT\Learning ASP NET\medicine-shopping\medicine-shopping-app\src\product\Product.Services\obj\Debug\net8.0\Product.Services.pdb
 D:\Learning IT\Learning ASP NET\medicine-shopping\medicine-shopping-app\src\product\Product.Services\obj\Debug\net8.0\ref\Product.Services.dll
+D:\Learning IT\Learning ASP NET\medicine-shopping\medicine-shopping-app\src\product\Product.Services\obj\Debug\net8.0\Product.Services.sourcelink.json

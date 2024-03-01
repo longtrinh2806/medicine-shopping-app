@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6prLZZzf5VaZRL+TSVJ8Ca5JRhQjK3evvx6WpRhDgNvhsRZetC/eVhoT+ZFm1L9iCbnhozMlz3Ev8k5NGbaQcg==",
+  "dgSpecHash": "zJVPECCeRXGFDBa8P6N+RFwl25tqvQoKOlFLLdq2jN9wr4ouLH00sRnS9B4QG1M9EzZeRNiZX7PEUKptzkxddw==",
   "success": true,
   "projectFilePath": "D:\\Learning IT\\Learning ASP NET\\medicine-shopping\\medicine-shopping-app\\src\\product\\Product.Api\\Product.Api.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,7 @@
     "C:\\Users\\trinh\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\trinh\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\trinh\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\trinh\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
     "C:\\Users\\trinh\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\trinh\\.nuget\\packages\\mongodb.bson\\2.23.1\\mongodb.bson.2.23.1.nupkg.sha512",
     "C:\\Users\\trinh\\.nuget\\packages\\mongodb.driver\\2.23.1\\mongodb.driver.2.23.1.nupkg.sha512",

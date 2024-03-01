@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "3lx7K4MiEJjwfG2pw50kenrLVI9rwYD4I//PeI/K9t14XZ1AZqJiiHvbO4q3G1tuo1w4DN07QgkSAozcXVCRbQ==",
+  "dgSpecHash": "hB6AoDXuY3mbQwsPOO/8WHayXztzAycaaPw5olBGQu4IcxLTO5h2wbW+oVjT1ffPKge/NscJaQqX9okov4gWRA==",
   "success": true,
   "projectFilePath": "D:\\Learning IT\\Learning ASP NET\\medicine-shopping\\medicine-shopping-app\\src\\product\\Product.Data\\Product.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\trinh\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\trinh\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "C:\\Users\\trinh\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\trinh\\.nuget\\packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",
+    "C:\\Users\\trinh\\.nuget\\packages\\mapster.core\\1.2.1\\mapster.core.1.2.1.nupkg.sha512",
     "C:\\Users\\trinh\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.2\\microsoft.entityframeworkcore.8.0.2.nupkg.sha512",
     "C:\\Users\\trinh\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.2\\microsoft.entityframeworkcore.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\trinh\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.2\\microsoft.entityframeworkcore.analyzers.8.0.2.nupkg.sha512",

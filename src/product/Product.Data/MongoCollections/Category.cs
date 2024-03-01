@@ -14,6 +14,6 @@ namespace ProductData.MongoCollections
         public Guid Id { get; set; }
         public string Name { get; set; } = string.Empty;
         [BsonRepresentation(MongoDB.Bson.BsonType.String)]
-        public Guid? ParentId { get; set; }
+        public Guid ParentId { get; set; }
     }
 }

@@ -56,3 +56,4 @@ D:\Learning IT\Learning ASP NET\medicine-shopping\medicine-shopping-app\src\prod
 D:\Learning IT\Learning ASP NET\medicine-shopping\medicine-shopping-app\src\product\Product.Api\bin\Debug\net8.0\StackExchange.Redis.dll
 D:\Learning IT\Learning ASP NET\medicine-shopping\medicine-shopping-app\src\product\Product.Api\bin\Debug\net8.0\Mapster.dll
 D:\Learning IT\Learning ASP NET\medicine-shopping\medicine-shopping-app\src\product\Product.Api\bin\Debug\net8.0\Mapster.Core.dll
+D:\Learning IT\Learning ASP NET\medicine-shopping\medicine-shopping-app\src\product\Product.Api\obj\Debug\net8.0\Product.Api.sourcelink.json

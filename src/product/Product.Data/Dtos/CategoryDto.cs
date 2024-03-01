@@ -9,6 +9,6 @@ namespace Product.Data.Dtos
     public class CategoryDto
     {
         public string Name { get; set; }
-        public Guid? ParentId { get; set; } = null;
+        public Guid ParentId { get; set; } = Guid.Empty;
     }
 }

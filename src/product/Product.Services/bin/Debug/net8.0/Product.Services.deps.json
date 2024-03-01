@@ -335,6 +335,7 @@
       },
       "Product.Data/1.0.0": {
         "dependencies": {
+          "Mapster": "7.4.0",
           "Microsoft.EntityFrameworkCore": "8.0.2",
           "Microsoft.Extensions.Caching.StackExchangeRedis": "8.0.2",
           "MongoDB.Driver": "2.23.1"

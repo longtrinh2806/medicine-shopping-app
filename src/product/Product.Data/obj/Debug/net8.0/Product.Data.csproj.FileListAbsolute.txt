@@ -10,3 +10,4 @@ D:\Learning IT\Learning ASP NET\medicine-shopping\medicine-shopping-app\src\prod
 D:\Learning IT\Learning ASP NET\medicine-shopping\medicine-shopping-app\src\product\Product.Data\obj\Debug\net8.0\refint\Product.Data.dll
 D:\Learning IT\Learning ASP NET\medicine-shopping\medicine-shopping-app\src\product\Product.Data\obj\Debug\net8.0\Product.Data.pdb
 D:\Learning IT\Learning ASP NET\medicine-shopping\medicine-shopping-app\src\product\Product.Data\obj\Debug\net8.0\ref\Product.Data.dll
+D:\Learning IT\Learning ASP NET\medicine-shopping\medicine-shopping-app\src\product\Product.Data\obj\Debug\net8.0\Product.Data.sourcelink.json

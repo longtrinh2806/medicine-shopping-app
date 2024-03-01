@@ -16,14 +16,46 @@ namespace Product.Api.Controllers
             _productService = productService;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAll([FromQuery] PaginationFilter filter)
+        //[HttpGet]
+        //public async Task<IActionResult> GetAll([FromQuery] PaginationFilter filter)
+        //{
+        //    try
+        //    {
+        //        var paginationFilter = new PaginationFilter(filter.PageNumber, filter.PageSize);
+
+        //        var result = await _productService.GetAll(paginationFilter.PageNumber, paginationFilter.PageSize);
+
+        //        return Ok(result);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return BadRequest(ex.Message);
+        //    }
+
+        //}
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(Guid id)
         {
             try
             {
-                var paginationFilter = new PaginationFilter(filter.PageNumber, filter.PageSize);
+                var result = await _productService.GetById(id);
 
-                var result = await _productService.GetAll(paginationFilter.PageNumber, paginationFilter.PageSize);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+        }
+        
+        [HttpGet("categoryId")]
+        public IActionResult GetByCategoryId([FromQuery]Guid categoryId)
+        {
+            try
+            {
+                var result = _productService.GetByCategoryId(categoryId);
 
                 return Ok(result);
             }
@@ -34,12 +66,13 @@ namespace Product.Api.Controllers
 
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(Guid id)
+        [HttpGet("searchTerms")]
+        public IActionResult GetByKeyWords([FromQuery] string searchTerms, [FromQuery] PaginationFilter filter)
         {
             try
             {
-                var result = await _productService.GetById(id);
+                var paginationFilter = new PaginationFilter(filter.PageNumber, filter.PageSize);
+                var result = _productService.GetByKeyWords(searchTerms, paginationFilter.PageNumber, paginationFilter.PageSize);
 
                 return Ok(result);
             }
@@ -66,7 +99,7 @@ namespace Product.Api.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateById(Guid id, ProductDto request)
+        public async Task<IActionResult> UpdateById(Guid id, ProductUpdatedDto request)
         {
             try
             {

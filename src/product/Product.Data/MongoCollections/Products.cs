@@ -1,4 +1,5 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
+using Product.Data.Templates;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,12 +19,17 @@ namespace ProductData.MongoCollections
         public string XuatXu { get; set; }
         public string MoTaNgan { get; set; }
         public string NhaSanXuat { get; set; }
-        public long GiaTien { get; set; }
-        public long GiaTienDaGiam { get; set; }
-        public int PhanTramGiamGia { get; set; }
-        public int SoLuong { get; set; }
+        public Price Price { get; set; }
         public List<string> ImageUrl { get; set; }
+        public string MoTaSanPham { get; set; }
+        public Dictionary<string, string> ThanhPhan { get; set; }
+        public string CongDung { get; set; }
+        public string TacDungPhu { get; set; }
+        public string LuuY { get; set; }
+        public string BaoQuan { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime LastUpdatedAt { get; set; } = DateTime.Now;
+        [BsonRepresentation(MongoDB.Bson.BsonType.String)]
         public Guid CategoryId { get; set; }
-        public DetailedDescription DetailedDescription { get; set; }
     }
 }
