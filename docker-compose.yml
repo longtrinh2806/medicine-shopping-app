@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  medicine_product:
+    image: trinhkimlong811/medicine-product:v3
+    container_name: medicine_product
+    ports:
+      - "5001:8080"
+    networks:
+      - mynetwork
+
+  medicine_order:
+    image: trinhkimlong811/medicine-order:v1
+    container_name: medicine_order
+    ports:
+      - "5003:8080"
+    networks:
+      - mynetwork
+
+  medicine_customer:
+    image: trinhkimlong811/medicine-customer:v1
+    container_name: medicine_customer
+    ports:
+      - "5002:8080"
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge

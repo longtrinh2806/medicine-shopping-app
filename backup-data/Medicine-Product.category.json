@@ -1,0 +1,760 @@
+[{
+  "_id": "f8518cd0-1464-444a-b18f-371cffdb39ad",
+  "Name": "Thực phẩm chức năng",
+  "ParentId": "00000000-0000-0000-0000-000000000000"
+},
+{
+  "_id": "ea5fca7f-43ca-4d8e-a317-cbb524df6be1",
+  "Name": "Dược mỹ phẩm",
+  "ParentId": "00000000-0000-0000-0000-000000000000"
+},
+{
+  "_id": "28869363-72d9-4ad1-a627-4dbd1f9d49a0",
+  "Name": "Chăm sóc cá nhân",
+  "ParentId": "00000000-0000-0000-0000-000000000000"
+},
+{
+  "_id": "0a2afc9c-7297-4416-a782-936e8cb52bce",
+  "Name": "Thiết bị y tế",
+  "ParentId": "00000000-0000-0000-0000-000000000000"
+},
+{
+  "_id": "44a4467a-7fcb-4b8b-a9a7-5b31b1984c97",
+  "Name": "Vitamin & Khoáng chất",
+  "ParentId": "f8518cd0-1464-444a-b18f-371cffdb39ad"
+},
+{
+  "_id": "907370c7-6026-4f55-b328-a85bd8cca978",
+  "Name": "Sinh lý - Nội tiết tố",
+  "ParentId": "f8518cd0-1464-444a-b18f-371cffdb39ad"
+},
+{
+  "_id": "98f4485d-4f3a-4071-9ca4-3423c5e9c6f5",
+  "Name": "Cải thiện tăng cường chức năng",
+  "ParentId": "f8518cd0-1464-444a-b18f-371cffdb39ad"
+},
+{
+  "_id": "8650f26b-9841-4f1f-8612-d29fdfa797d5",
+  "Name": "Hỗ trợ điều trị",
+  "ParentId": "f8518cd0-1464-444a-b18f-371cffdb39ad"
+},
+{
+  "_id": "6bf140a1-588a-44ee-bec6-f4ef2ce029f0",
+  "Name": "Hỗ trợ tiêu hóa",
+  "ParentId": "f8518cd0-1464-444a-b18f-371cffdb39ad"
+},
+{
+  "_id": "d9bbda14-e5aa-4c98-a2a8-db2ee18748d2",
+  "Name": "Thần kinh não",
+  "ParentId": "f8518cd0-1464-444a-b18f-371cffdb39ad"
+},
+{
+  "_id": "d3a263f0-fd44-4a31-82fe-3cc0f7a9dcb7",
+  "Name": "Hỗ trợ làm đẹp",
+  "ParentId": "f8518cd0-1464-444a-b18f-371cffdb39ad"
+},
+{
+  "_id": "7603e095-4502-4b3a-a374-3d432755e44d",
+  "Name": "Sức khỏe tim mạch",
+  "ParentId": "f8518cd0-1464-444a-b18f-371cffdb39ad"
+},
+{
+  "_id": "493ec281-d831-4ab2-b7e1-09d72a4a524d",
+  "Name": "Dinh dưỡng",
+  "ParentId": "f8518cd0-1464-444a-b18f-371cffdb39ad"
+},
+{
+  "_id": "74cf405a-18bb-4274-b3a3-c1f948c9c2af",
+  "Name": "Chăm sóc da mặt",
+  "ParentId": "ea5fca7f-43ca-4d8e-a317-cbb524df6be1"
+},
+{
+  "_id": "f10e4a23-a5b5-4028-b6c2-2ba4e25d6345",
+  "Name": "Chăm sóc cơ thể",
+  "ParentId": "ea5fca7f-43ca-4d8e-a317-cbb524df6be1"
+},
+{
+  "_id": "56cc16c4-d772-430d-8800-2c2ae9a949dc",
+  "Name": "Giải pháp làn da",
+  "ParentId": "ea5fca7f-43ca-4d8e-a317-cbb524df6be1"
+},
+{
+  "_id": "08d6b693-90fa-4d32-a89e-ed9868e0892c",
+  "Name": "Chăm sóc tóc - da đầu",
+  "ParentId": "ea5fca7f-43ca-4d8e-a317-cbb524df6be1"
+},
+{
+  "_id": "f8825d50-6a2b-4086-a90c-2f2add5f5e8f",
+  "Name": "Mỹ phẩm trang điểm",
+  "ParentId": "ea5fca7f-43ca-4d8e-a317-cbb524df6be1"
+},
+{
+  "_id": "47a9c302-d964-4365-9025-c2c7e223d193",
+  "Name": "Chăm sóc da vùng mắt",
+  "ParentId": "ea5fca7f-43ca-4d8e-a317-cbb524df6be1"
+},
+{
+  "_id": "81e1928f-dbcf-4854-a84c-5c069a32f654",
+  "Name": "Sản phẩm từ thiên nhiên",
+  "ParentId": "ea5fca7f-43ca-4d8e-a317-cbb524df6be1"
+},
+{
+  "_id": "0055feb5-7ca6-4fe8-893f-03affe162039",
+  "Name": "Hỗ trợ tình dục",
+  "ParentId": "28869363-72d9-4ad1-a627-4dbd1f9d49a0"
+},
+{
+  "_id": "ec481393-3de4-470a-bced-d96bab619880",
+  "Name": "Thực phẩm - Đồ uống",
+  "ParentId": "28869363-72d9-4ad1-a627-4dbd1f9d49a0"
+},
+{
+  "_id": "bf4c71ba-317d-4dce-a86b-0481f48061ad",
+  "Name": "Vệ sinh cá nhân",
+  "ParentId": "28869363-72d9-4ad1-a627-4dbd1f9d49a0"
+},
+{
+  "_id": "4d15d60c-7f1f-4b38-ad64-051b8c96d7ba",
+  "Name": "Chăm sóc răng miệng",
+  "ParentId": "28869363-72d9-4ad1-a627-4dbd1f9d49a0"
+},
+{
+  "_id": "96fcda3c-03b4-4828-8e18-0f2f72fce6f8",
+  "Name": "Đồ dùng gia đình",
+  "ParentId": "28869363-72d9-4ad1-a627-4dbd1f9d49a0"
+},
+{
+  "_id": "36140e0a-23e7-4f29-bec5-ef8f082aabfd",
+  "Name": "Hàng tổng hợp",
+  "ParentId": "28869363-72d9-4ad1-a627-4dbd1f9d49a0"
+},
+{
+  "_id": "88959bf8-013d-4a38-9baa-30b530cca729",
+  "Name": "Tinh dầu các loại",
+  "ParentId": "28869363-72d9-4ad1-a627-4dbd1f9d49a0"
+},
+{
+  "_id": "bf7ab027-f915-49a1-9916-b86b85ab75ee",
+  "Name": "Thiết bị làm đẹp",
+  "ParentId": "28869363-72d9-4ad1-a627-4dbd1f9d49a0"
+},
+{
+  "_id": "f105a9cd-1517-4655-a480-0996015cfb5e",
+  "Name": "Dụng cụ y tế",
+  "ParentId": "0a2afc9c-7297-4416-a782-936e8cb52bce"
+},
+{
+  "_id": "abaa2e20-765a-4e7d-89af-bd0b5f1bce1f",
+  "Name": "Dụng cụ theo dõi",
+  "ParentId": "0a2afc9c-7297-4416-a782-936e8cb52bce"
+},
+{
+  "_id": "da88a34f-1fda-4df4-93c0-a47708abdb27",
+  "Name": "Dụng cụ sơ cứu",
+  "ParentId": "0a2afc9c-7297-4416-a782-936e8cb52bce"
+},
+{
+  "_id": "cd533501-e8b5-469f-8914-799179423f8b",
+  "Name": "Khẩu trang",
+  "ParentId": "0a2afc9c-7297-4416-a782-936e8cb52bce"
+},
+{
+  "_id": "9f4cd963-d4f9-4887-a8ea-aa80732604d4",
+  "Name": "Bổ sung Canxi & Vitamin D",
+  "ParentId": "44a4467a-7fcb-4b8b-a9a7-5b31b1984c97"
+},
+{
+  "_id": "5a1a7c1f-1fe4-4578-bcd9-08e866e95452",
+  "Name": "Vitamin tổng hợp",
+  "ParentId": "44a4467a-7fcb-4b8b-a9a7-5b31b1984c97"
+},
+{
+  "_id": "850dbb82-8b11-43f7-8283-88a49e017b48",
+  "Name": "Dầu cá, Omega 3, DHA",
+  "ParentId": "44a4467a-7fcb-4b8b-a9a7-5b31b1984c97"
+},
+{
+  "_id": "1ae01f98-f665-4ce6-9442-3c8fb3f2e37a",
+  "Name": "Vitamin C các loại",
+  "ParentId": "44a4467a-7fcb-4b8b-a9a7-5b31b1984c97"
+},
+{
+  "_id": "cea795dc-29ca-4fff-a3d8-d5734a7b5ece",
+  "Name": "Bổ sung Sắt & Axit Folic",
+  "ParentId": "44a4467a-7fcb-4b8b-a9a7-5b31b1984c97"
+},
+{
+  "_id": "0261cf35-3cd3-4422-8e0e-da2a5a5a8d88",
+  "Name": "Vitamin E các loại",
+  "ParentId": "44a4467a-7fcb-4b8b-a9a7-5b31b1984c97"
+},
+{
+  "_id": "f80866a4-a506-4eb5-82b0-0cf4e14398f1",
+  "Name": "Bổ sung Kẽm & Magie",
+  "ParentId": "44a4467a-7fcb-4b8b-a9a7-5b31b1984c97"
+},
+{
+  "_id": "cb15f520-1449-4acd-85d5-9dd341990f90",
+  "Name": "Sinh lý nam",
+  "ParentId": "907370c7-6026-4f55-b328-a85bd8cca978"
+},
+{
+  "_id": "6c9507ee-d2c4-41ba-a5be-ddb57e04bd5a",
+  "Name": "Sức khỏe tình dục",
+  "ParentId": "907370c7-6026-4f55-b328-a85bd8cca978"
+},
+{
+  "_id": "3262a27b-08ff-43eb-b9d2-6c67c8a436a3",
+  "Name": "Cân bằng nội tiết tố",
+  "ParentId": "907370c7-6026-4f55-b328-a85bd8cca978"
+},
+{
+  "_id": "13ba89f8-5497-450e-b5b8-9cc8478ab14c",
+  "Name": "Sinh lý nữ",
+  "ParentId": "907370c7-6026-4f55-b328-a85bd8cca978"
+},
+{
+  "_id": "7f0cc7ad-3dde-410b-9ce8-8c9aefec4df0",
+  "Name": "Hỗ trợ mãn kinh",
+  "ParentId": "907370c7-6026-4f55-b328-a85bd8cca978"
+},
+{
+  "_id": "35dd02c4-2d4f-4a50-bf40-89194e3be7cc",
+  "Name": "Chức năng gan",
+  "ParentId": "98f4485d-4f3a-4071-9ca4-3423c5e9c6f5"
+},
+{
+  "_id": "064eaa4b-6e2a-4962-8f3b-fb9f12a3c364",
+  "Name": "Tăng sức đề kháng, miễn dịch",
+  "ParentId": "98f4485d-4f3a-4071-9ca4-3423c5e9c6f5"
+},
+{
+  "_id": "4a359790-1b6b-4ad7-9615-6f869ee230d7",
+  "Name": "Bổ mắt, bảo vệ mắt",
+  "ParentId": "98f4485d-4f3a-4071-9ca4-3423c5e9c6f5"
+},
+{
+  "_id": "63179680-0461-4d13-ba2d-f45f72c1dddb",
+  "Name": "Hỗ trợ trao đổi chất",
+  "ParentId": "98f4485d-4f3a-4071-9ca4-3423c5e9c6f5"
+},
+{
+  "_id": "9243bcc8-6cd1-4cc6-ac91-a72adf39c473",
+  "Name": "Giải rượu, cai rượu",
+  "ParentId": "98f4485d-4f3a-4071-9ca4-3423c5e9c6f5"
+},
+{
+  "_id": "79b09467-5368-4b48-a085-acbef38e4f06",
+  "Name": "Chống lão hóa",
+  "ParentId": "98f4485d-4f3a-4071-9ca4-3423c5e9c6f5"
+},
+{
+  "_id": "8d4f92cd-485f-4011-b99f-ebb77387ca39",
+  "Name": "Cơ xương khớp",
+  "ParentId": "8650f26b-9841-4f1f-8612-d29fdfa797d5"
+},
+{
+  "_id": "5bb59478-5268-4988-b9d5-2f3908699926",
+  "Name": "Hô hấp, ho, xoang",
+  "ParentId": "8650f26b-9841-4f1f-8612-d29fdfa797d5"
+},
+{
+  "_id": "ee6bcbeb-cbeb-4728-90f0-444558760cfa",
+  "Name": "Thận, tiền liệt tuyến",
+  "ParentId": "8650f26b-9841-4f1f-8612-d29fdfa797d5"
+},
+{
+  "_id": "dc053f55-790e-489e-90c4-364f02599567",
+  "Name": "Hỗ trợ điều trị trĩ",
+  "ParentId": "8650f26b-9841-4f1f-8612-d29fdfa797d5"
+},
+{
+  "_id": "0224dacc-d25a-4146-8d59-62243972c0d8",
+  "Name": "Hỗ trợ điều trị gout",
+  "ParentId": "8650f26b-9841-4f1f-8612-d29fdfa797d5"
+},
+{
+  "_id": "623b9ae2-9898-491e-888c-160a6db14e25",
+  "Name": "Hỗ trợ điều trị tiểu đường",
+  "ParentId": "8650f26b-9841-4f1f-8612-d29fdfa797d5"
+},
+{
+  "_id": "d98233ff-61bb-4d41-bf8b-18244f1f9f9e",
+  "Name": "Hỗ trợ điều trị ung thư",
+  "ParentId": "8650f26b-9841-4f1f-8612-d29fdfa797d5"
+},
+{
+  "_id": "a8f9e669-7178-46db-b825-6caaf1ab4246",
+  "Name": "Dạ dày, tá tràng",
+  "ParentId": "6bf140a1-588a-44ee-bec6-f4ef2ce029f0"
+},
+{
+  "_id": "8ecaeac2-502c-4255-a298-7ad67ec5cd0f",
+  "Name": "Táo bón",
+  "ParentId": "6bf140a1-588a-44ee-bec6-f4ef2ce029f0"
+},
+{
+  "_id": "3e259402-2a78-4b58-89c0-27b26f77df56",
+  "Name": "Vi sinh - Probiotic",
+  "ParentId": "6bf140a1-588a-44ee-bec6-f4ef2ce029f0"
+},
+{
+  "_id": "1a0b9a1c-90b6-4281-920f-66de691a86ad",
+  "Name": "Đại tràng",
+  "ParentId": "6bf140a1-588a-44ee-bec6-f4ef2ce029f0"
+},
+{
+  "_id": "375676fc-360a-48fa-ad19-dc20254afe56",
+  "Name": "Khó tiêu",
+  "ParentId": "6bf140a1-588a-44ee-bec6-f4ef2ce029f0"
+},
+{
+  "_id": "5d8e05de-5a98-40ee-bf68-4320bfcac291",
+  "Name": "Bổ não - cải thiện trí nhớ",
+  "ParentId": "d9bbda14-e5aa-4c98-a2a8-db2ee18748d2"
+},
+{
+  "_id": "c7056bd7-9492-4018-9141-d6b5f919cd91",
+  "Name": "Hỗ trợ giấc ngủ ngon",
+  "ParentId": "d9bbda14-e5aa-4c98-a2a8-db2ee18748d2"
+},
+{
+  "_id": "1cb075e3-1710-4568-b3fd-6bc91d271c1c",
+  "Name": "Tuần hoàn máu",
+  "ParentId": "d9bbda14-e5aa-4c98-a2a8-db2ee18748d2"
+},
+{
+  "_id": "ad0fb057-80ce-4be9-bc46-80ca86ff0fed",
+  "Name": "Kiểm soát căng thẳng",
+  "ParentId": "d9bbda14-e5aa-4c98-a2a8-db2ee18748d2"
+},
+{
+  "_id": "f5de1975-8ff4-42a2-b9d7-3e9a26694539",
+  "Name": "Hoạt huyết",
+  "ParentId": "d9bbda14-e5aa-4c98-a2a8-db2ee18748d2"
+},
+{
+  "_id": "4db399d2-1fb1-44ff-819d-c90770c2df16",
+  "Name": "Da",
+  "ParentId": "d3a263f0-fd44-4a31-82fe-3cc0f7a9dcb7"
+},
+{
+  "_id": "c4ca7969-070e-4cc5-9f65-7d659e83fa9c",
+  "Name": "Hỗ trợ giảm cân",
+  "ParentId": "d3a263f0-fd44-4a31-82fe-3cc0f7a9dcb7"
+},
+{
+  "_id": "67c888ab-860c-43e8-95dc-6e6317420517",
+  "Name": "Tóc",
+  "ParentId": "d3a263f0-fd44-4a31-82fe-3cc0f7a9dcb7"
+},
+{
+  "_id": "c4e460c1-3d01-454b-9945-ffb8b23aca77",
+  "Name": "Giảm Cholesterol",
+  "ParentId": "7603e095-4502-4b3a-a374-3d432755e44d"
+},
+{
+  "_id": "1f136932-6f7b-430c-8fa4-27a79c9e03df",
+  "Name": "Huyết áp",
+  "ParentId": "7603e095-4502-4b3a-a374-3d432755e44d"
+},
+{
+  "_id": "16f8f329-1e9a-411d-9059-ea6850023d27",
+  "Name": "Suy giãn tĩnh mạch",
+  "ParentId": "7603e095-4502-4b3a-a374-3d432755e44d"
+},
+{
+  "_id": "9b505663-559d-4b28-a1c5-06a99348b5df",
+  "Name": "Sữa",
+  "ParentId": "493ec281-d831-4ab2-b7e1-09d72a4a524d"
+},
+{
+  "_id": "f791d609-9367-4ed6-9140-a7ba75c931fc",
+  "Name": "Dinh dưỡng trẻ em",
+  "ParentId": "493ec281-d831-4ab2-b7e1-09d72a4a524d"
+},
+{
+  "_id": "79fbe16c-3c07-4353-a3d6-2bd39c2dfab8",
+  "Name": "Sữa rửa mặt (Kem, gel, sữa)",
+  "ParentId": "74cf405a-18bb-4274-b3a3-c1f948c9c2af"
+},
+{
+  "_id": "92975810-c260-46d8-8cb4-1d444b7d921e",
+  "Name": "Chống nắng da mặt",
+  "ParentId": "74cf405a-18bb-4274-b3a3-c1f948c9c2af"
+},
+{
+  "_id": "01c91c6c-4159-4047-aa89-1f0efea69536",
+  "Name": "Dưỡng da mặt",
+  "ParentId": "74cf405a-18bb-4274-b3a3-c1f948c9c2af"
+},
+{
+  "_id": "2a51a747-c721-4787-8f70-f94d31713407",
+  "Name": "Mặt nạ",
+  "ParentId": "74cf405a-18bb-4274-b3a3-c1f948c9c2af"
+},
+{
+  "_id": "de7eb7b8-039b-4ab5-be8d-bcfd2a6cf9b9",
+  "Name": "Serum, Essence hoặc Ampoule",
+  "ParentId": "74cf405a-18bb-4274-b3a3-c1f948c9c2af"
+},
+{
+  "_id": "cf1e2ccf-d615-495b-9325-e9be615cf804",
+  "Name": "Toner (nước hoa hồng) / Lotion",
+  "ParentId": "74cf405a-18bb-4274-b3a3-c1f948c9c2af"
+},
+{
+  "_id": "12d96e8d-0e9d-4a01-bab3-e3eaba30b585",
+  "Name": "Tẩy tế bào chết",
+  "ParentId": "74cf405a-18bb-4274-b3a3-c1f948c9c2af"
+},
+{
+  "_id": "7a06edf0-b58c-49ab-a880-f26f5263167d",
+  "Name": "Xịt khoáng",
+  "ParentId": "74cf405a-18bb-4274-b3a3-c1f948c9c2af"
+},
+{
+  "_id": "74932732-91c5-430f-b64c-8837f58fca03",
+  "Name": "Tẩy trang",
+  "ParentId": "74cf405a-18bb-4274-b3a3-c1f948c9c2af"
+},
+{
+  "_id": "4b491e58-9299-4e6a-aa70-2329b0e3fde4",
+  "Name": "Sữa tắm, xà bông",
+  "ParentId": "f10e4a23-a5b5-4028-b6c2-2ba4e25d6345"
+},
+{
+  "_id": "32a934dc-e749-463f-8487-9db118bff6b3",
+  "Name": "Chống nắng toàn thân",
+  "ParentId": "f10e4a23-a5b5-4028-b6c2-2ba4e25d6345"
+},
+{
+  "_id": "5edb970a-eb27-4e7c-bee0-bdc1562d70e7",
+  "Name": "Khử mùi",
+  "ParentId": "f10e4a23-a5b5-4028-b6c2-2ba4e25d6345"
+},
+{
+  "_id": "2ee0e24f-3ff6-47a4-b224-0aa79024277a",
+  "Name": "Dưỡng thể",
+  "ParentId": "f10e4a23-a5b5-4028-b6c2-2ba4e25d6345"
+},
+{
+  "_id": "c6533d2d-a636-49c4-85c2-7419cf66f105",
+  "Name": "Trị nứt da",
+  "ParentId": "f10e4a23-a5b5-4028-b6c2-2ba4e25d6345"
+},
+{
+  "_id": "a095e363-e4a0-4d83-bf7d-dbd7900cf43a",
+  "Name": "Dưỡng tay, chân",
+  "ParentId": "f10e4a23-a5b5-4028-b6c2-2ba4e25d6345"
+},
+{
+  "_id": "67bfa7a3-9fe1-4899-b562-629f5d7edbf2",
+  "Name": "Chăm sóc ngực",
+  "ParentId": "f10e4a23-a5b5-4028-b6c2-2ba4e25d6345"
+},
+{
+  "_id": "f95686f9-9ab5-4dab-b3c1-ea305ce22c18",
+  "Name": "Massage",
+  "ParentId": "f10e4a23-a5b5-4028-b6c2-2ba4e25d6345"
+},
+{
+  "_id": "488e341d-9bca-43ef-bc51-10a56eb16bac",
+  "Name": "Trị sẹo, mờ vết thâm",
+  "ParentId": "56cc16c4-d772-430d-8800-2c2ae9a949dc"
+},
+{
+  "_id": "ac4c21ad-df67-48a7-a8f0-2dbeb0dc73d9",
+  "Name": "Trị mụn",
+  "ParentId": "56cc16c4-d772-430d-8800-2c2ae9a949dc"
+},
+{
+  "_id": "56576bdf-7cd5-452f-923e-b441510164e0",
+  "Name": "Da bị khô, thiếu ẩm",
+  "ParentId": "56cc16c4-d772-430d-8800-2c2ae9a949dc"
+},
+{
+  "_id": "86a7382d-fdaf-4ff0-aa54-a56e2e322539",
+  "Name": "Nám, tàn nhang, đốm nâu",
+  "ParentId": "56cc16c4-d772-430d-8800-2c2ae9a949dc"
+},
+{
+  "_id": "8299195e-19e6-4c5a-9747-8592d2522b82",
+  "Name": "Viêm da cơ địa",
+  "ParentId": "56cc16c4-d772-430d-8800-2c2ae9a949dc"
+},
+{
+  "_id": "0139281b-b84e-4100-ac7a-5c18c626d478",
+  "Name": "Da bị kích ứng",
+  "ParentId": "56cc16c4-d772-430d-8800-2c2ae9a949dc"
+},
+{
+  "_id": "f2d152eb-b845-41da-bbfc-62aeaca4b145",
+  "Name": "Tái tạo, chống lão hóa da",
+  "ParentId": "56cc16c4-d772-430d-8800-2c2ae9a949dc"
+},
+{
+  "_id": "17378e9b-06f6-43b6-9374-20daf951bad0",
+  "Name": "Da sạm, xỉn màu",
+  "ParentId": "56cc16c4-d772-430d-8800-2c2ae9a949dc"
+},
+{
+  "_id": "9a581296-d926-44b3-a957-ecbc9d1bb7db",
+  "Name": "Dầu gội dầu xả",
+  "ParentId": "08d6b693-90fa-4d32-a89e-ed9868e0892c"
+},
+{
+  "_id": "45af83bb-b061-4162-b7a3-51f163d1b0e1",
+  "Name": "Dầu gội trị nấm",
+  "ParentId": "08d6b693-90fa-4d32-a89e-ed9868e0892c"
+},
+{
+  "_id": "52b7d04a-a8d8-4f1f-abc3-c60cb41b7a64",
+  "Name": "Dưỡng tóc, ủ tóc",
+  "ParentId": "08d6b693-90fa-4d32-a89e-ed9868e0892c"
+},
+{
+  "_id": "f77955c9-7ce1-4537-80eb-902ca8390173",
+  "Name": "Đặc trị cho tóc",
+  "ParentId": "08d6b693-90fa-4d32-a89e-ed9868e0892c"
+},
+{
+  "_id": "c4831f54-3ea3-4c3a-9d12-ef31dc3a8e5c",
+  "Name": "Son môi",
+  "ParentId": "f8825d50-6a2b-4086-a90c-2f2add5f5e8f"
+},
+{
+  "_id": "6a1bcc64-1395-4ec8-a681-863c2d200a8b",
+  "Name": "Trang điểm mặt",
+  "ParentId": "f8825d50-6a2b-4086-a90c-2f2add5f5e8f"
+},
+{
+  "_id": "e1f520ab-3158-4dfd-888a-c68707482517",
+  "Name": "Trị quầng thâm, bọng mắt",
+  "ParentId": "47a9c302-d964-4365-9025-c2c7e223d193"
+},
+{
+  "_id": "e2ec1dbb-4363-469e-a2ec-8e8c0f62c626",
+  "Name": "Xoá nếp nhăn vùng mắt",
+  "ParentId": "47a9c302-d964-4365-9025-c2c7e223d193"
+},
+{
+  "_id": "21831c9b-2c5e-44df-b7f7-ec77a0392f2e",
+  "Name": "Dưỡng da mắt",
+  "ParentId": "47a9c302-d964-4365-9025-c2c7e223d193"
+},
+{
+  "_id": "caa71e8f-f0d0-42b5-86a8-cd098320b9a2",
+  "Name": "Tinh Dầu",
+  "ParentId": "81e1928f-dbcf-4854-a84c-5c069a32f654"
+},
+{
+  "_id": "a060fc16-51bd-4664-a166-faf72e14b322",
+  "Name": "Dầu dừa",
+  "ParentId": "81e1928f-dbcf-4854-a84c-5c069a32f654"
+},
+{
+  "_id": "ed7c8951-1f8b-4a09-b792-98899bccb6b4",
+  "Name": "Bao cao su",
+  "ParentId": "0055feb5-7ca6-4fe8-893f-03affe162039"
+},
+{
+  "_id": "dbe94b73-9fa4-4e90-945f-b1a73aa1d1a5",
+  "Name": "Gel bôi trơn",
+  "ParentId": "0055feb5-7ca6-4fe8-893f-03affe162039"
+},
+{
+  "_id": "8da0aaca-8ff3-4ba0-946c-3038ddcb4d1e",
+  "Name": "Nước Yến",
+  "ParentId": "ec481393-3de4-470a-bced-d96bab619880"
+},
+{
+  "_id": "287207cc-bbe0-4942-8f76-f1644ec855ca",
+  "Name": "Kẹo cứng",
+  "ParentId": "ec481393-3de4-470a-bced-d96bab619880"
+},
+{
+  "_id": "68cac4d0-ec13-4b66-8112-61a39b7929a1",
+  "Name": "Nước uống không gas",
+  "ParentId": "ec481393-3de4-470a-bced-d96bab619880"
+},
+{
+  "_id": "0c279c80-3bd8-4cb9-9925-fc2614a3d965",
+  "Name": "Đường ăn kiêng",
+  "ParentId": "ec481393-3de4-470a-bced-d96bab619880"
+},
+{
+  "_id": "9bdc41c8-4df3-4e09-98a3-1b5535909f3b",
+  "Name": "Trà thảo dược",
+  "ParentId": "ec481393-3de4-470a-bced-d96bab619880"
+},
+{
+  "_id": "cf0e3cfe-836f-4d91-abcf-063b5c2c4e53",
+  "Name": "Kẹo dẻo",
+  "ParentId": "ec481393-3de4-470a-bced-d96bab619880"
+},
+{
+  "_id": "195f8f62-c1a2-42b1-be25-0ac450c15fd9",
+  "Name": "Tổ Yến",
+  "ParentId": "ec481393-3de4-470a-bced-d96bab619880"
+},
+{
+  "_id": "395f225d-f0e6-43cf-acde-69c9d58d6700",
+  "Name": "Dung dịch vệ sinh phụ nữ",
+  "ParentId": "bf4c71ba-317d-4dce-a86b-0481f48061ad"
+},
+{
+  "_id": "63979cde-0481-4afb-99cb-d98d6fca1a11",
+  "Name": "Vệ sinh tai",
+  "ParentId": "bf4c71ba-317d-4dce-a86b-0481f48061ad"
+},
+{
+  "_id": "9e025019-8fa6-4293-ad57-27862d93c7e9",
+  "Name": "Băng vệ sinh",
+  "ParentId": "bf4c71ba-317d-4dce-a86b-0481f48061ad"
+},
+{
+  "_id": "6e59d7da-c839-44f1-afce-c23a41cb6375",
+  "Name": "Nước rửa tay",
+  "ParentId": "bf4c71ba-317d-4dce-a86b-0481f48061ad"
+},
+{
+  "_id": "b44ed70f-113f-412f-a6b8-bf6fe8ac6af4",
+  "Name": "Kem đánh răng",
+  "ParentId": "4d15d60c-7f1f-4b38-ad64-051b8c96d7ba"
+},
+{
+  "_id": "a3a2da03-228f-475a-bc94-01cfc6176087",
+  "Name": "Bàn chải điện",
+  "ParentId": "4d15d60c-7f1f-4b38-ad64-051b8c96d7ba"
+},
+{
+  "_id": "5306a322-157e-424f-ba0f-f7780cef6b04",
+  "Name": "Chỉ nha khoa",
+  "ParentId": "4d15d60c-7f1f-4b38-ad64-051b8c96d7ba"
+},
+{
+  "_id": "832a582e-b4eb-4102-9d56-b12690cc2b76",
+  "Name": "Chăm sóc răng",
+  "ParentId": "4d15d60c-7f1f-4b38-ad64-051b8c96d7ba"
+},
+{
+  "_id": "c309d95c-82ef-4dd7-a9cf-a2dc3a46a9b7",
+  "Name": "Nước súc miệng",
+  "ParentId": "4d15d60c-7f1f-4b38-ad64-051b8c96d7ba"
+},
+{
+  "_id": "c3a733e1-8101-4e9a-a745-d096d4ec81e3",
+  "Name": "Chống muỗi & côn trùng",
+  "ParentId": "96fcda3c-03b4-4828-8e18-0f2f72fce6f8"
+},
+{
+  "_id": "8752c16c-4a02-4c08-b6f6-911f07fbbd8e",
+  "Name": "Đồ dùng cho bé",
+  "ParentId": "96fcda3c-03b4-4828-8e18-0f2f72fce6f8"
+},
+{
+  "_id": "c688cd5d-4a39-4fec-9437-38c166eaaaeb",
+  "Name": "Đồ dùng cho mẹ",
+  "ParentId": "96fcda3c-03b4-4828-8e18-0f2f72fce6f8"
+},
+{
+  "_id": "bfce92f6-d8aa-447f-83c1-7a646748e1c4",
+  "Name": "Khăn giấy, khăn ướt",
+  "ParentId": "36140e0a-23e7-4f29-bec5-ef8f082aabfd"
+},
+{
+  "_id": "600e29df-35e7-4901-9e87-aaa82da6d264",
+  "Name": "Tinh dầu massage",
+  "ParentId": "88959bf8-013d-4a38-9baa-30b530cca729"
+},
+{
+  "_id": "37353b97-bbf6-4748-9a86-3b831f54a8c9",
+  "Name": "Tinh dầu trị cảm",
+  "ParentId": "88959bf8-013d-4a38-9baa-30b530cca729"
+},
+{
+  "_id": "5e1557f4-852f-436e-9120-5233b957d38a",
+  "Name": "Tinh dầu xông",
+  "ParentId": "88959bf8-013d-4a38-9baa-30b530cca729"
+},
+{
+  "_id": "59d28fd1-f401-4914-b0d3-ec8ea02e2448",
+  "Name": "Dụng cụ tẩy lông",
+  "ParentId": "bf7ab027-f915-49a1-9916-b86b85ab75ee"
+},
+{
+  "_id": "737f3595-49a9-482f-8c01-14b605bf719a",
+  "Name": "Dụng cụ cạo râu",
+  "ParentId": "bf7ab027-f915-49a1-9916-b86b85ab75ee"
+},
+{
+  "_id": "1d61b166-e0bc-4d39-9454-601395084850",
+  "Name": "Dụng cụ khác",
+  "ParentId": "f105a9cd-1517-4655-a480-0996015cfb5e"
+},
+{
+  "_id": "448b3390-cefd-4131-a23e-ccc0eef1d287",
+  "Name": "Kim các loại",
+  "ParentId": "f105a9cd-1517-4655-a480-0996015cfb5e"
+},
+{
+  "_id": "67adeaf2-f738-417b-a724-aa77d371391a",
+  "Name": "Dụng cụ vệ sinh mũi",
+  "ParentId": "f105a9cd-1517-4655-a480-0996015cfb5e"
+},
+{
+  "_id": "fdf816fd-0b4e-4ad2-b2fe-f597692f6409",
+  "Name": "Túi chườm",
+  "ParentId": "f105a9cd-1517-4655-a480-0996015cfb5e"
+},
+{
+  "_id": "43f54b7b-6106-454a-82c1-99a21e12e7a2",
+  "Name": "Máy đo huyết áp",
+  "ParentId": "abaa2e20-765a-4e7d-89af-bd0b5f1bce1f"
+},
+{
+  "_id": "627af895-710f-4d91-aa09-8e34fe298430",
+  "Name": "Thử thai",
+  "ParentId": "abaa2e20-765a-4e7d-89af-bd0b5f1bce1f"
+},
+{
+  "_id": "e84653f6-94a4-4ffc-bfd2-0c07aca12bc6",
+  "Name": "Nhiệt kế",
+  "ParentId": "abaa2e20-765a-4e7d-89af-bd0b5f1bce1f"
+},
+{
+  "_id": "5a710bc0-3145-4bef-acbb-b4f01ffc723b",
+  "Name": "Băng y tế",
+  "ParentId": "da88a34f-1fda-4df4-93c0-a47708abdb27"
+},
+{
+  "_id": "78d5d260-c9e6-4022-a69c-2b4f8243bbe4",
+  "Name": "Cồn và nước sát trùng",
+  "ParentId": "da88a34f-1fda-4df4-93c0-a47708abdb27"
+},
+{
+  "_id": "1e3bc9ad-036e-44d9-8ec1-c773ca0e2e72",
+  "Name": "Bông y tế",
+  "ParentId": "da88a34f-1fda-4df4-93c0-a47708abdb27"
+},
+{
+  "_id": "c2ca3599-aa45-4ab0-932c-807f5be70aae",
+  "Name": "Xịt giảm đau",
+  "ParentId": "da88a34f-1fda-4df4-93c0-a47708abdb27"
+},
+{
+  "_id": "65f4f72a-3f9c-4c17-aa72-06c129ad5a1d",
+  "Name": "Khẩu trang y tế",
+  "ParentId": "cd533501-e8b5-469f-8914-799179423f8b"
+},
+{
+  "_id": "6d0ba1f1-f3d5-4b78-909c-de21783f5477",
+  "Name": "Khẩu trang vải",
+  "ParentId": "cd533501-e8b5-469f-8914-799179423f8b"
+},
+{
+  "_id": "6919e021-b388-4d5a-8b50-180399425840",
+  "Name": "Máy, que thử đường huyết",
+  "ParentId": "abaa2e20-765a-4e7d-89af-bd0b5f1bce1f"
+}]
