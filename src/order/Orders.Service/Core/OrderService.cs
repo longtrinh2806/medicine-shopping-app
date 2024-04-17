@@ -1,4 +1,5 @@
-﻿using MassTransit;
+﻿using Mapster;
+using MassTransit;
 using Orders.Data.DataAccess;
 using Orders.Data.Dtos;
 using Orders.Data.Models;
@@ -17,6 +18,7 @@ namespace Orders.Service.Core
     {
         Task<ResponseModel> CreateNewOrder(Guid customerId, List<CartItemDto> createOrderDtos);
         ResponseModel GetOrderByCustomerId(Guid customerId);
+        ResponseModel GetOrderdetail(Guid orderId);
     }
     public class OrderService : IOrderService
     {
@@ -31,14 +33,23 @@ namespace Orders.Service.Core
 
         public ResponseModel GetOrderByCustomerId(Guid customerId)
         {
-            var orders = _appDbContext.Orders
-                .Where(o => o.CustomerId.Equals(customerId))
-                .ToList();
+            try
+            {
+                var orders = _appDbContext.Orders
+               .Where(o => o.CustomerId.Equals(customerId))
+               .ToList();
 
-            if (!orders.Any())
-                throw new Exception("No Result");
+                if (!orders.Any())
+                    throw new Exception("No Result");
 
-            return new ResponseModel { Data = orders, Message = "Got Successfully", Succeeded = true };
+                var orderList = orders.Adapt<List<OrderDto>>();
+
+                return new ResponseModel { Data = orderList, Message = "Got Successfully", Succeeded = true };
+            }
+            catch (Exception ex)
+            {
+                return new ResponseModel { Message = ex.Message, Succeeded = false };
+            }
         }
 
         public async Task<ResponseModel> CreateNewOrder(Guid customerId, List<CartItemDto> createOrderDtos)
@@ -98,6 +109,23 @@ namespace Orders.Service.Core
             }
         }
 
+        public ResponseModel GetOrderdetail(Guid orderId)
+        {
+            try
+            {
+                var orderDetails = _appDbContext.OrderDetails.Where(x => x.OrderId.Equals(orderId));
 
+                if (!orderDetails.Any())
+                    throw new Exception("No data");
+
+                var result = orderDetails.Adapt<List<OrderDetailDto>>();
+
+                return new ResponseModel { Data = result, Message = "Got Successfully", Succeeded = true };
+            }
+            catch (Exception ex)
+            {
+                return new ResponseModel { Succeeded = false, Message = ex.Message };
+            }
+        }
     }
 }

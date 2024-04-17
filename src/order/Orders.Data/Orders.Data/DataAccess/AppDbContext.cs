@@ -17,6 +17,7 @@ namespace Orders.Data.DataAccess
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<Cart> Carts { get; set; }
         public DbSet<CartItem> CartItems { get; set; }
+        public DbSet<Receipt> Receipts { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -32,6 +33,9 @@ namespace Orders.Data.DataAccess
             
             modelBuilder.Entity<OrderDetail>()
                 .HasKey(od => od.Id);
+
+            modelBuilder.Entity<Receipt>()
+                .HasKey(o => o.Id);
 
             modelBuilder.Entity<Order>()
                 .HasMany(o => o.OrderDetails)

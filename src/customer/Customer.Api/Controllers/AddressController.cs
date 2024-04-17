@@ -1,12 +1,14 @@
 ﻿using Customer.Data.Request;
 using Customer.Services.Core;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Customer.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/address")]
     [ApiController]
+    [Authorize]
     public class AddressController : ControllerBase
     {
         private readonly IAddressService _addressService;

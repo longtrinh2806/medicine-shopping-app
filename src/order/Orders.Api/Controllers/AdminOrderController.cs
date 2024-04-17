@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Orders.Data.Filters;
 using Orders.Service.Core;
@@ -16,7 +17,8 @@ namespace Orders.Api.Controllers
             _adminOrderService = adminOrderService;
         }
 
-        [HttpGet("/get-all-order")]
+        [HttpGet("get-all-order")]
+        [Authorize(Policy = "ADMIN")]
         public IActionResult GetAllOrder([FromQuery]PaginationFilter pagination)
         {
             PaginationFilter paginationFilter = new(pagination.PageIndex, pagination.PageSize);
@@ -27,7 +29,8 @@ namespace Orders.Api.Controllers
             return BadRequest(result.Message);
         }
 
-        [HttpGet("/get-order-from-date-to-date")]
+        [HttpGet("get-order-from-date-to-date")]
+        [Authorize(Policy = "ADMIN")]
         public IActionResult GetOrderFromDateToDate([FromQuery] PaginationFilter pagination, [FromQuery] DateFilter dateFilter)
         {
             PaginationFilter paginationFilter = new(pagination.PageIndex, pagination.PageSize);
@@ -38,7 +41,8 @@ namespace Orders.Api.Controllers
             return BadRequest(result.Message);
         }
 
-        [HttpGet("/get-pending-order")]
+        [HttpGet("get-pending-order")]
+        [Authorize(Policy = "ADMIN")]
         public IActionResult GetPendingOrder([FromQuery] PaginationFilter pagination)
         {
             PaginationFilter paginationFilter = new(pagination.PageIndex, pagination.PageSize);
@@ -48,7 +52,8 @@ namespace Orders.Api.Controllers
             return BadRequest(result.Message);
         }
 
-        [HttpGet("/get-confirmed-order")]
+        [HttpGet("get-confirmed-order")]
+        [Authorize(Policy = "ADMIN")]
         public IActionResult GetConfirmedOrder([FromQuery] PaginationFilter pagination)
         {
             PaginationFilter paginationFilter = new(pagination.PageIndex, pagination.PageSize);
@@ -59,7 +64,8 @@ namespace Orders.Api.Controllers
             return BadRequest(result.Message);
         }
 
-        [HttpGet("/get-completed-order")]
+        [HttpGet("get-completed-order")]
+        [Authorize(Policy = "ADMIN")]
         public IActionResult GetCompletedOrder([FromQuery] PaginationFilter pagination)
         {
             PaginationFilter paginationFilter = new(pagination.PageIndex, pagination.PageSize);
@@ -70,7 +76,8 @@ namespace Orders.Api.Controllers
             return BadRequest(result.Message);
         }
 
-        [HttpGet("/get-cancelled-order")]
+        [HttpGet("get-cancelled-order")]
+        [Authorize(Policy = "ADMIN")]
         public IActionResult GetCancelledOrder([FromQuery] PaginationFilter pagination)
         {
             PaginationFilter paginationFilter = new(pagination.PageIndex, pagination.PageSize);
@@ -82,6 +89,7 @@ namespace Orders.Api.Controllers
         }
 
         [HttpPut("update-order/{orderId}/confirmed")]
+        [Authorize(Policy = "ADMIN")]
         public IActionResult ConfirmedOrder(Guid orderId)
         {
             var result = _adminOrderService.ConfirmedOrder(orderId);
@@ -91,6 +99,7 @@ namespace Orders.Api.Controllers
         }
 
         [HttpPut("update-order/{orderId}/completed")]
+        [Authorize(Policy = "ADMIN")]
         public IActionResult CompletedOrder(Guid orderId)
         {
             var result = _adminOrderService.CompletedOrder(orderId);
@@ -100,6 +109,7 @@ namespace Orders.Api.Controllers
         }
 
         [HttpPut("update-order/{orderId}/cancelled")]
+        [Authorize(Policy = "ADMIN")]
         public IActionResult CancelledOrder(Guid orderId)
         {
             var result = _adminOrderService.CancelledOrder(orderId);

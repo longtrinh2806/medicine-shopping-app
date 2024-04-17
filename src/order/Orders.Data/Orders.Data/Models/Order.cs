@@ -12,6 +12,7 @@ namespace Orders.Data.Models
         public Guid CustomerId { get; set; }
         public long TotalPrice { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime UpdatedAt { get; set; } = DateTime.Now;
         public EnumStatus Status { get; set; }
         public List<OrderDetail> OrderDetails { get; set; }
     }

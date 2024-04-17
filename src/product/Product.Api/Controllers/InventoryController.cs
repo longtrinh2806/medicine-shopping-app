@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Product.Data.Dtos;
 using Product.Services.Core;
@@ -30,6 +31,7 @@ namespace Product.Api.Controllers
             }
         }
 
+        [Authorize(Policy = "ADMIN")]
         [HttpPut("{productId}")]
         public IActionResult UpdateByProductId(Guid productId, [FromBody] InventoryDto request)
         {
@@ -43,6 +45,8 @@ namespace Product.Api.Controllers
                 return NotFound(ex.Message);
             }
         }
+
+        [Authorize(Policy = "ADMIN")]
         [HttpDelete("{productId}")]
         public IActionResult DeleteByProductId(Guid productId)
         {

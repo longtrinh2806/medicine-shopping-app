@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   medicine_product:
-    image: trinhkimlong811/medicine-product:v3
+    image: trinhkimlong811/medicine-product:v4
     container_name: medicine_product
     ports:
       - "5001:8080"
@@ -10,7 +10,7 @@ services:
       - mynetwork
 
   medicine_order:
-    image: trinhkimlong811/medicine-order:v1
+    image: trinhkimlong811/medicine-order:v2
     container_name: medicine_order
     ports:
       - "5003:8080"
@@ -18,12 +18,32 @@ services:
       - mynetwork
 
   medicine_customer:
-    image: trinhkimlong811/medicine-customer:v1
+    image: trinhkimlong811/medicine-customer:v2
     container_name: medicine_customer
     ports:
       - "5002:8080"
     networks:
       - mynetwork
+  medicine_authentication:
+    image: trinhkimlong811/medicine-auth:v1
+    container_name: medicine-authentication
+    ports:
+      - "5004:5004"
+    networks:
+      - mynetwork
+    depends_on:
+      - medicine_product
+      - medicine_order
+      - medicine_customer
+  medicine_apigateway:
+    image: trinhkimlong811/medicine-gateway:v1
+    container_name: medicine_apigateway
+    ports:
+      - "5000:8080" 
+    networks:
+      - mynetwork
+    depends_on:
+      - medicine_authentication
 
 networks:
   mynetwork:

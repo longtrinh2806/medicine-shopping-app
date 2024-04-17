@@ -1,0 +1,29 @@
+server:
+  port: 5004
+spring:
+  application:
+    name: Authentication
+  datasource:
+    url: jdbc:sqlserver://medicine-server.database.windows.net:1433;database=medicine;user=trinhkimlong811@gmail.com@medicine-server;password=long0865448203@;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+
+  rabbitmq:
+    host: armadillo.rmq.cloudamqp.com
+    port: 5671
+    username: rrwjdeba
+    password: EoobtRTDkbg0QscwW-yP14Zzcvobiear
+    virtual-host: rrwjdeba
+    ssl:
+      enabled: true
+
+application:
+  security:
+    jwt:
+      secret-key: 9d9812a72a8f9e9635184cb618cb51f12e66c89a4ae87bffda69747f3a580ca2

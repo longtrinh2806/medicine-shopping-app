@@ -205,3 +205,4 @@ D:\Learning IT\Learning ASP NET\medicine-shopping-app\src\customer\Customer.Api\
 D:\Learning IT\Learning ASP NET\medicine-shopping-app\src\customer\Customer.Api\bin\Debug\net8.0\MassTransit.Abstractions.dll
 D:\Learning IT\Learning ASP NET\medicine-shopping-app\src\customer\Customer.Api\bin\Debug\net8.0\MassTransit.RabbitMqTransport.dll
 D:\Learning IT\Learning ASP NET\medicine-shopping-app\src\customer\Customer.Api\bin\Debug\net8.0\RabbitMQ.Client.dll
+D:\Learning IT\Learning ASP NET\medicine-shopping-app\src\customer\Customer.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

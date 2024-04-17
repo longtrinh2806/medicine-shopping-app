@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Product.Data.Dtos;
 using Product.Data.Filters;
@@ -17,7 +18,7 @@ namespace Product.Api.Controllers
             _categoryService = categoryService;
         }
 
-        [HttpGet()]
+        [HttpGet]
         public async Task<IActionResult> Get([FromQuery] PaginationFilter filter)
         {
             try
@@ -61,7 +62,8 @@ namespace Product.Api.Controllers
             }
         }
 
-        [HttpPost()]
+        [Authorize(Policy = "ADMIN")]
+        [HttpPost]
         public async Task<IActionResult> Create([FromBody]CategoryDto request)
         {
             try
@@ -75,6 +77,7 @@ namespace Product.Api.Controllers
             }
         }
 
+        [Authorize(Policy = "ADMIN")]
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateById(Guid id,[FromBody] CategoryDto request)
         {
@@ -89,6 +92,7 @@ namespace Product.Api.Controllers
             }
         }
 
+        [Authorize(Policy = "ADMIN")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteById(Guid id)
         {

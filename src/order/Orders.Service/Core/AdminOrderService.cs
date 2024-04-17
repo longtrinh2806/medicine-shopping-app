@@ -1,4 +1,6 @@
-﻿using Mapster;
+﻿using customer_order_contract;
+using Mapster;
+using MassTransit;
 using Orders.Data.DataAccess;
 using Orders.Data.Dtos;
 using Orders.Data.Filters;
@@ -27,10 +29,12 @@ namespace Orders.Service.Core
     public class AdminOrderService : IAdminOrderService
     {
         private readonly AppDbContext _appDbContext;
+        private IPublishEndpoint _publishEndpoint;
 
-        public AdminOrderService(AppDbContext appDbContext)
+        public AdminOrderService(AppDbContext appDbContext, IPublishEndpoint publishEndpoint)
         {
             _appDbContext = appDbContext;
+            _publishEndpoint = publishEndpoint;
         }
 
         public ResponseModel ConfirmedOrder(Guid orderId)
@@ -41,7 +45,12 @@ namespace Orders.Service.Core
 
                 if (order == null)
                     throw new Exception("Order not found");
+
+                if (order.Status == EnumStatus.COMPLETE)
+                    throw new Exception("Order is completed. Can not change order status");
+
                 order.Status = EnumStatus.CONFIRMED;
+                order.UpdatedAt = DateTime.Now;
 
                 _appDbContext.Orders.Update(order);
                 _appDbContext.SaveChanges();
@@ -51,7 +60,7 @@ namespace Orders.Service.Core
             catch (Exception ex)
             {
                 Console.WriteLine(ex);
-                return new ResponseModel { Message = "Confirm Failed", Succeeded = false };
+                return new ResponseModel { Message = ex.Message, Succeeded = false };
             }
         }
 
@@ -63,7 +72,11 @@ namespace Orders.Service.Core
 
                 if (order == null)
                     throw new Exception("Order not found");
+                if (order.Status == EnumStatus.COMPLETE)
+                    throw new Exception("Order is completed. Can not change order status");
+
                 order.Status = EnumStatus.CANCELLED;
+                order.UpdatedAt = DateTime.Now;
 
                 _appDbContext.Orders.Update(order);
                 _appDbContext.SaveChanges();
@@ -73,29 +86,54 @@ namespace Orders.Service.Core
             catch (Exception ex)
             {
                 Console.WriteLine(ex);
-                return new ResponseModel { Message = "CANCELLED Failed", Succeeded = false };
+                return new ResponseModel { Message = ex.Message, Succeeded = false };
             }
         }
 
         public ResponseModel CompletedOrder(Guid orderId)
         {
+            var transaction = _appDbContext.Database.BeginTransaction();
             try
             {
                 var order = _appDbContext.Orders.FirstOrDefault(order => order.Id == orderId);
 
                 if (order == null)
                     throw new Exception("Order not found");
+
+                if (order.Status == EnumStatus.COMPLETE)
+                    throw new Exception("Order is completed. Can not change order status");
+
                 order.Status = EnumStatus.COMPLETE;
+                order.UpdatedAt = DateTime.Now;
 
                 _appDbContext.Orders.Update(order);
                 _appDbContext.SaveChanges();
+
+                Receipt receipt = new()
+                {
+                    OrderId = orderId,
+                };
+
+                _appDbContext.Receipts.Add(receipt);
+                _appDbContext.SaveChanges();
+
+                OrderCompleted orderCompleted = new()
+                {
+                    CustomerId = order.CustomerId,
+                    DiemTichLuy = ((int)(order.TotalPrice / 1000))
+                };
+
+                _publishEndpoint.Publish(orderCompleted);
+
+                transaction.Commit();
 
                 return new ResponseModel { Message = "COMPLETE Order Successfully", Succeeded = true };
             }
             catch (Exception ex)
             {
+                transaction.Rollback();
                 Console.WriteLine(ex);
-                return new ResponseModel { Message = "COMPLETE Failed", Succeeded = false };
+                return new ResponseModel { Message = ex.Message, Succeeded = false };
             }
         }
 
@@ -104,6 +142,7 @@ namespace Orders.Service.Core
             try
             {
                 var orders = _appDbContext.Orders
+                    .OrderBy(order => order.Id)
                     .Skip((pagination.PageIndex - 1) * pagination.PageSize)
                     .Take(pagination.PageSize)
                     .ToList();
@@ -127,6 +166,8 @@ namespace Orders.Service.Core
             {
                 var pendingOrders = _appDbContext.Orders
                     .Where(o => o.Status.Equals(EnumStatus.PENDING))
+                    .OrderBy(order => order.CreatedAt)
+                    .ThenBy(order => order.Id)
                     .Skip((pagination.PageIndex - 1) * pagination.PageSize)
                     .Take(pagination.PageSize)
                     .ToList();
@@ -151,6 +192,8 @@ namespace Orders.Service.Core
             {
                 var pendingOrders = _appDbContext.Orders
                     .Where(o => o.Status.Equals(EnumStatus.CONFIRMED))
+                    .OrderBy(order => order.CreatedAt)
+                    .ThenBy(order => order.Id)
                     .Skip((pagination.PageIndex - 1) * pagination.PageSize)
                     .Take(pagination.PageSize)
                     .ToList();
@@ -175,6 +218,8 @@ namespace Orders.Service.Core
             {
                 var pendingOrders = _appDbContext.Orders
                     .Where(o => o.Status.Equals(EnumStatus.CANCELLED))
+                    .OrderBy(order => order.CreatedAt)
+                    .ThenBy(order => order.Id)
                     .Skip((pagination.PageIndex - 1) * pagination.PageSize)
                     .Take(pagination.PageSize)
                     .ToList();
@@ -199,6 +244,8 @@ namespace Orders.Service.Core
             {
                 var pendingOrders = _appDbContext.Orders
                     .Where(o => o.Status.Equals(EnumStatus.COMPLETE))
+                    .OrderBy(order => order.CreatedAt)
+                    .ThenBy(order => order.Id)
                     .Skip((pagination.PageIndex - 1) * pagination.PageSize)
                     .Take(pagination.PageSize)
                     .ToList();
@@ -226,6 +273,8 @@ namespace Orders.Service.Core
 
                 var orders = _appDbContext.Orders
                     .Where(x => x.CreatedAt >= dateFilter.From && x.CreatedAt <= dateFilter.To)
+                    .OrderBy(order => order.CreatedAt)
+                    .ThenBy(order => order.Id)
                     .Skip((paginationFilter.PageIndex - 1) * paginationFilter.PageSize)
                     .Take(paginationFilter.PageSize)
                     .ToList();

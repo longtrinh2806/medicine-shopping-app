@@ -214,9 +214,9 @@ namespace Product.Services.Core
             var filter = Builders<Products>.Filter.Text(searchTerms);
             var result = _dbContext.Products
                 .Find(filter)
+                .Sort(Builders<Products>.Sort.MetaTextScore("textScore"))
                 .Skip((pageNumber - 1) * pageSize)
                 .Limit(pageSize)
-                .Sort(Builders<Products>.Sort.MetaTextScore("textScore"))
                 .ToList();
 
             if (result.Count < 1) throw new Exception("No Data");

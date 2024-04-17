@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Product.Data.Dtos;
 using Product.Data.Filters;
@@ -83,6 +84,7 @@ namespace Product.Api.Controllers
 
         }
 
+        [Authorize(Policy = "ADMIN")]
         [HttpPost]
         public async Task<IActionResult> Post(ProductDto request)
         {
@@ -98,6 +100,7 @@ namespace Product.Api.Controllers
             }
         }
 
+        [Authorize(Policy = "ADMIN")]
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateById(Guid id, ProductUpdatedDto request)
         {
@@ -114,6 +117,7 @@ namespace Product.Api.Controllers
 
         }
 
+        [Authorize(Policy = "ADMIN")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteById(Guid id)
         {

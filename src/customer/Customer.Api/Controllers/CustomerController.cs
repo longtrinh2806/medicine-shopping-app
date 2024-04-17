@@ -1,6 +1,7 @@
 ﻿using Customer.Data.Dtos;
 using Customer.Data.Request;
 using Customer.Services.Core;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,6 +9,7 @@ namespace Customer.Api.Controllers
 {
     [Route("api/customer")]
     [ApiController]
+    [Authorize]
     public class CustomerController : ControllerBase
     {
         private readonly ICustomerService _customerService;
@@ -30,23 +32,23 @@ namespace Customer.Api.Controllers
             }
         }
 
-        [HttpPost]
-        public IActionResult CreateNewCustomer([FromBody] CustomerDto request)
-        {
-            var result = _customerService.CreateNewCus(request);
-            if (!result.Succeeded)
-                return BadRequest(result);
-            return Ok(result);
-        }
+        //[HttpPost]
+        //public IActionResult CreateNewCustomer([FromBody] CustomerDto request)
+        //{
+        //    var result = _customerService.CreateNewCus(request);
+        //    if (!result.Succeeded)
+        //        return BadRequest(result);
+        //    return Ok(result);
+        //}
 
-        [HttpPut("info/{customerId}")]
-        public IActionResult UpdateCustomerInfo([FromBody] CustomerUpdatedDto request, Guid customerId)
-        {
-            var result = _customerService.UpdateCustomerInfo(request, customerId);
-            if (!result.Succeeded)
-                return BadRequest(result);
-            return Ok(result);
-        }
+        //[HttpPut("info/{customerId}")]
+        //public IActionResult UpdateCustomerInfo([FromBody] CustomerUpdatedDto request, Guid customerId)
+        //{
+        //    var result = _customerService.UpdateCustomerInfo(request, customerId);
+        //    if (!result.Succeeded)
+        //        return BadRequest(result);
+        //    return Ok(result);
+        //}
 
         [HttpPut("address/{customerId}")]
         public IActionResult UpdateCustomerAddress([FromBody] AddressDto request, Guid customerId)

@@ -146,3 +146,4 @@ D:\Learning IT\Learning ASP NET\medicine-shopping-app\src\order\Orders.Api\bin\D
 D:\Learning IT\Learning ASP NET\medicine-shopping-app\src\order\Orders.Api\bin\Debug\net8.0\RabbitMQ.Client.dll
 D:\Learning IT\Learning ASP NET\medicine-shopping-app\src\order\Orders.Api\bin\Debug\net8.0\Mapster.dll
 D:\Learning IT\Learning ASP NET\medicine-shopping-app\src\order\Orders.Api\bin\Debug\net8.0\Mapster.Core.dll
+D:\Learning IT\Learning ASP NET\medicine-shopping-app\src\order\Orders.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
