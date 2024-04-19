@@ -64,3 +64,4 @@ Thay {port} thành port cần truy cập. Đây là danh sách các port hiện 
 ![image](https://github.com/longtrinh2806/medicine-shopping-app/assets/136159911/40ad8fa5-e512-4dad-8194-d771561053d2)
 
 **Nếu khi chạy ứng dụng mà bị lỗi ở service authentication, vui lòng cung cấp ip hiện tại. Bởi vì app đang sử dụng database free do azure cung cấp nên bị hạn chế về chức năng và tính sẵn sàng.**
+Đây là 1 ví dụ về lỗi: "_medicine-authentication  | com.microsoft.sqlserver.jdbc.SQLServerException: Cannot open server 'medicine-server' requested by the login. Client with IP address '27.78.220.3' is not allowed to access the server.  To enable access, use the Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect. ClientConnectionId:beb4d603-e267-4874-b4ca-2b797b421764_"
