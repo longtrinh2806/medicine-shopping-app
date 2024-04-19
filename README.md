@@ -3,23 +3,39 @@
 Ý tưởng chính của việc tạo dự án này là vận hành một hệ thống phân tán với công nghệ và kiến ​​trúc mới nhất như Microservices, DDD, MongoDB, MSSQL, Redis, RabbitMq, Masstransit trong .Net 8.
 
 **The Goals of This Project**
+
 ❇️ Sử dụng kiến trúc microservices để thiết kế kiến trúc cho dự án.
+
 ❇️ Sử dụng Domain Driven Design (DDD) để thực hiện những business logic trong dự án.
+
 ❇️ Sử dụng Rabbitmq và Masstransit cho việc giao tiếp giữa các services.
+
 ❇️ Sử dụng MSSQL và MongoDB làm hệ quản trị cơ sở dữ liệu.
+
 ❇️ Sử dụng các kĩ thuật tối ưu CSDL (indexes, database replica)
+
 ❇️ Sử dụng Docker-Compose để đóng gói ứng dụng.
+
 ❇️ Sử dụng JWT cho việc xác thực và phân quyền.
+
 ❇️ Sử dụng Ocelot làm microservices gateway.
 
 **Technologies - Libraries**
+
 ✔️ .NET 8 - .NET Framework và .NET Core, bao gồm ASP.NET and ASP.NET Core
+
 ✔️ Spring Boot 3.2.5 - Spring Framework
+
 ✔️ Mapster - Convention-based object-object mapper in .NET.
+
 ✔️ Masstransit - Distributed Application Framework for .NET.
+
 ✔️ Swagger & Swagger UI - Swagger tools cho việc tự động generate API Document.
+
 ✔️ Ocelot - API Gateway
+
 ✔️ MongoDB.Driver - .NET Driver for MongoDB.
+
 ✔️ Microsoft.EntityFrameworkCore.SqlServer - .NET Driver for MSSQL.
 
 **Tổng quan về hệ thống**
