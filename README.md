@@ -47,4 +47,4 @@ Thay {port} thành port cần truy cập. Đây là danh sách các port hiện 
 ![image](https://github.com/longtrinh2806/medicine-shopping-app/assets/136159911/062d93f8-d9f7-4b27-9134-28db225bfd7b)
 ![image](https://github.com/longtrinh2806/medicine-shopping-app/assets/136159911/40ad8fa5-e512-4dad-8194-d771561053d2)
 
-Nếu khi chạy ứng dụng mà bị lỗi ở service authentication, vui lòng cung cấp ip hiện tại. Bởi vì app đang sử dụng database free do azure cung cấp nên bị hạn chế về chức năng và tính sẵn sàng.
+**Nếu khi chạy ứng dụng mà bị lỗi ở service authentication, vui lòng cung cấp ip hiện tại. Bởi vì app đang sử dụng database free do azure cung cấp nên bị hạn chế về chức năng và tính sẵn sàng.**
