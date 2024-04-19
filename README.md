@@ -39,12 +39,12 @@
 ![image](https://github.com/longtrinh2806/medicine-shopping-app/assets/136159911/2f9447c7-41be-4db9-8ae9-7ca23b17b2e1)
 3. Sau khi chạy thành công, truy cập đường dẫn sau để xem tài liệu swagger: http://localhost:{port}/swagger/index.html
 Thay {port} thành port cần truy cập. Đây là danh sách các port hiện hành:
-  5001: Product Service
-  5002: Customer Service
-  5003: Order Service
+    5001: Product Service
+    5002: Customer Service
+    5003: Order Service
 Đối với Authentication Service, chưa có tài liệu swagger. Microservices này chạy ở port 5004 và có các api và chức năng như sau:
 ![image](https://github.com/longtrinh2806/medicine-shopping-app/assets/136159911/6b5997e0-45f8-4bdf-99b8-a1440f9e949d)
 ![image](https://github.com/longtrinh2806/medicine-shopping-app/assets/136159911/062d93f8-d9f7-4b27-9134-28db225bfd7b)
 ![image](https://github.com/longtrinh2806/medicine-shopping-app/assets/136159911/40ad8fa5-e512-4dad-8194-d771561053d2)
 
-**Nếu khi chạy ứng dụng mà bị lỗi ở service authentication, vui lòng cung cấp ip hiện tại. Bởi vì app đang sử dụng database free do azure cung cấp nên bị hạn chế về chức năng và tính sẵn sàng.**************
+Nếu khi chạy ứng dụng mà bị lỗi ở service authentication, vui lòng cung cấp ip hiện tại. Bởi vì app đang sử dụng database free do azure cung cấp nên bị hạn chế về chức năng và tính sẵn sàng.
