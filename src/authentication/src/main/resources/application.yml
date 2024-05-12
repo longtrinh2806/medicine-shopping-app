@@ -4,7 +4,7 @@ spring:
   application:
     name: Authentication
   datasource:
-    url: jdbc:sqlserver://medicine-server.database.windows.net:1433;database=medicine;user=trinhkimlong811@gmail.com@medicine-server;password=long0865448203@;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    url: jdbc:sqlserver://medicine-server.database.windows.net:1433;database=medicine-app;user=trinhkimlong811;password=long0865448203@;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
   jpa:
     show-sql: true
     hibernate:

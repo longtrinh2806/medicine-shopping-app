@@ -41,14 +41,14 @@ namespace Customer.Api.Controllers
         //    return Ok(result);
         //}
 
-        //[HttpPut("info/{customerId}")]
-        //public IActionResult UpdateCustomerInfo([FromBody] CustomerUpdatedDto request, Guid customerId)
-        //{
-        //    var result = _customerService.UpdateCustomerInfo(request, customerId);
-        //    if (!result.Succeeded)
-        //        return BadRequest(result);
-        //    return Ok(result);
-        //}
+        [HttpPut("info/{customerId}")]
+        public IActionResult UpdateCustomerInfo([FromBody] CustomerUpdatedDto request, Guid customerId)
+        {
+            var result = _customerService.UpdateCustomerInfo(request, customerId);
+            if (!result.Succeeded)
+                return BadRequest(result);
+            return Ok(result);
+        }
 
         [HttpPut("address/{customerId}")]
         public IActionResult UpdateCustomerAddress([FromBody] AddressDto request, Guid customerId)

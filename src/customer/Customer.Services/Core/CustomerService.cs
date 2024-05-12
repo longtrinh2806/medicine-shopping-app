@@ -121,6 +121,7 @@ namespace Customer.Services.Core
                     existedCustomer.LastName = request.LastName;
                     existedCustomer.Gender = request.Gender;
                     existedCustomer.BirthDay = request.BirthDay;
+                    existedCustomer.PhoneNumber = request.PhoneNumber;
                     existedCustomer.LastUpdatedAt = DateTime.UtcNow.AddHours(7);
 
                     _appDbContext.Customers.Update(existedCustomer);

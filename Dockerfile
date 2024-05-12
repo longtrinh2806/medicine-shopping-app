@@ -8,17 +8,19 @@ EXPOSE 8080
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["src/gateway/ApiGateway/ApiGateway.csproj", "src/gateway/ApiGateway/"]
-RUN dotnet restore "./src/gateway/ApiGateway/./ApiGateway.csproj"
+COPY ["src/customer/Customer.Api/Customer.Api.csproj", "src/customer/Customer.Api/"]
+COPY ["src/customer/Customer.Services/Customer.Services.csproj", "src/customer/Customer.Services/"]
+COPY ["src/customer/Customer.Data/Customer.Data.csproj", "src/customer/Customer.Data/"]
+RUN dotnet restore "./src/customer/Customer.Api/./Customer.Api.csproj"
 COPY . .
-WORKDIR "/src/src/gateway/ApiGateway"
-RUN dotnet build "./ApiGateway.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/src/customer/Customer.Api"
+RUN dotnet build "./Customer.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./ApiGateway.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./Customer.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "ApiGateway.dll"]
+ENTRYPOINT ["dotnet", "Customer.Api.dll"]

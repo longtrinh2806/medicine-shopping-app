@@ -9,7 +9,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_product",
-          "Port": 5001
+          "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/api/product"
@@ -22,7 +22,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_product",
-          "Port": 5001
+          "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/api/product/{id}"
@@ -35,7 +35,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_product",
-          "Port": 5001
+          "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/api/product/categoryId?categoryId={query}"
@@ -48,7 +48,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_product",
-          "Port": 5001
+          "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/api/product/searchTerms?searchTerms={query}"
@@ -63,7 +63,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_product",
-          "Port": 5001
+          "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/api/inventory/{productId}"
@@ -78,7 +78,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_product",
-          "Port": 5001
+          "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/api/category"
@@ -91,7 +91,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_product",
-          "Port": 5001
+          "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/api/category/{id}"
@@ -104,7 +104,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_product",
-          "Port": 5001
+          "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/api/category/parentid/{parentId}"
@@ -119,7 +119,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_customer",
-          "Port": 5002
+          "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/api/address"
@@ -134,7 +134,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_customer",
-          "Port": 5002
+          "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/api/customer"
@@ -147,7 +147,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_customer",
-          "Port": 5002
+          "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/api/customer/address/{customerId}"
@@ -160,7 +160,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_order",
-          "Port": 5003
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/admin-order/get-all-order",
@@ -172,7 +172,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_order",
-          "Port": 5003
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/admin-order/get-order-from-date-to-date",
@@ -184,7 +184,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_order",
-          "Port": 5003
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/admin-order/get-pending-order",
@@ -196,7 +196,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_order",
-          "Port": 5003
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/admin-order/get-confirmed-order",
@@ -208,7 +208,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_order",
-          "Port": 5003
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/admin-order/get-completed-order",
@@ -220,7 +220,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_order",
-          "Port": 5003
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/admin-order/get-cancelled-order",
@@ -232,7 +232,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_order",
-          "Port": 5003
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/admin-order/update-order/{orderId}/confirmed",
@@ -244,7 +244,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_order",
-          "Port": 5003
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/admin-order/update-order/{orderId}/completed",
@@ -256,7 +256,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_order",
-          "Port": 5003
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/admin-order/update-order/{orderId}/cancelled",
@@ -270,7 +270,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_order",
-          "Port": 5003
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/cart/get-cart-by-customerid/{customerId}",
@@ -282,7 +282,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_order",
-          "Port": 5003
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/cart/get-cart-item/{cartId}",
@@ -294,7 +294,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_order",
-          "Port": 5003
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/cart/add-item-to-cart/{cartId}",
@@ -306,7 +306,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_order",
-          "Port": 5003
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/cart/update-item/{cartItemId}",
@@ -318,7 +318,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_order",
-          "Port": 5003
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/cart/delete-item/{cartItemId}",
@@ -332,7 +332,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_order",
-          "Port": 5003
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/order/don-hang-cua-toi/{customerId}",
@@ -344,7 +344,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_order",
-          "Port": 5003
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/order/chi-tiet-don-hang/{orderId}",
@@ -356,7 +356,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_order",
-          "Port": 5003
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/order/create-order/{customerId}",
@@ -370,7 +370,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_order",
-          "Port": 5003
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/receipt/{receiptId}",
@@ -382,7 +382,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "medicine_order",
-          "Port": 5003
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/receipt/order/{orderId}",
@@ -395,7 +395,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "medicine_authentication",
+          "Host": "medicine-authentication",
           "Port": 5004
         }
       ],
@@ -407,7 +407,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "medicine_authentication",
+          "Host": "medicine-authentication",
           "Port": 5004
         }
       ],
@@ -419,7 +419,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "medicine_authentication",
+          "Host": "medicine-authentication",
           "Port": 5004
         }
       ],
