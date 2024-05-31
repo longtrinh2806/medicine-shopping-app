@@ -31,6 +31,20 @@ namespace Customer.Api.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        
+        [HttpGet("customerId")]
+        public IActionResult GetById([FromQuery] Guid customerId)
+        {
+            try
+            {
+                var result = _customerService.GetById(customerId);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
         //[HttpPost]
         //public IActionResult CreateNewCustomer([FromBody] CustomerDto request)

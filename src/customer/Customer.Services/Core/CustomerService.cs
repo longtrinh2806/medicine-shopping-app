@@ -6,13 +6,6 @@ using Customer.Data.ViewModels;
 using customer_order_contract;
 using Mapster;
 using MassTransit;
-using Microsoft.EntityFrameworkCore.Storage;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace Customer.Services.Core
 {
@@ -22,6 +15,7 @@ namespace Customer.Services.Core
         ResponseModel UpdateCustomerInfo(CustomerUpdatedDto request, Guid customerId);
         ResponseModel CreateNewCus(CustomerDto request);
         ResponseModel UpdateCustomerAddress(AddressDto request, Guid customerId);
+        ResponseModel GetById(Guid customerId);
     }
     public class CustomerService : ICustomerService
     {
@@ -180,5 +174,19 @@ namespace Customer.Services.Core
 
         }
 
+        public ResponseModel GetById(Guid customerId)
+        {
+            try
+            {
+                var customer = _appDbContext.Customers.FirstOrDefault(customer => customer.Id.Equals(customerId));
+                if (customer == null) throw new Exception("Customer not existed!!");
+
+                return new ResponseModel { Succeeded = true, Data = customer };
+            }
+            catch (Exception e)
+            {
+                return new ResponseModel { Succeeded = false, Message = e.Message };
+            }
+        }
     }
 }

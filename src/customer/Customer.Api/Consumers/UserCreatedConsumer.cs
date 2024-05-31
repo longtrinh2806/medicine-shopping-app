@@ -3,8 +3,6 @@ using Customer.Data.DataAccess;
 using Customer.Data.Models;
 using customer_order_contract;
 using MassTransit;
-using MassTransit.Configuration;
-using MassTransit.Transports;
 
 namespace Customer.Api.Consumers
 {

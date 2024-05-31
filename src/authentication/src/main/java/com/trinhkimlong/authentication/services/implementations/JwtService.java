@@ -20,7 +20,7 @@ import java.util.function.Function;
 public class JwtService implements IJwtService {
     @Value("${application.security.jwt.secret-key}")
     private String SECRET_KEY;
-    private static final long accessTokenExpiration = 1000 * 60 * 5 * 6; // 10 minutes
+    private static final long accessTokenExpiration = 1000 * 60 * 60; // 60 minutes
 
     private static final long MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
     private static final long refreshTokenExpiration = MILLISECONDS_PER_DAY * 30; // 30 days

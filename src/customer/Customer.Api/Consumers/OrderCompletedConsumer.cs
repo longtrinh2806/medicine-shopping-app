@@ -20,7 +20,7 @@ namespace Customer.Api.Consumers
             if (existingMembership == null)
                 throw new Exception("CustomerId not exist");
 
-            existingMembership.DiemTichLuy = context.Message.DiemTichLuy;
+            existingMembership.DiemTichLuy += context.Message.DiemTichLuy;
 
             _dbContext.Memberships.Update(existingMembership);
             await _dbContext.SaveChangesAsync();
